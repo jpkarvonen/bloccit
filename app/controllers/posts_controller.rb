@@ -14,7 +14,7 @@ class PostsController < ApplicationController
   def create
     @post = Post.new
     @post.title = params[:post][:title]
-    @post.body = params[:post][:body]
+    params[:post][:title]
 
     if @post.save
       flash[:notice] = "Post was saved."
