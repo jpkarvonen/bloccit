@@ -21,17 +21,11 @@
  </div>
  
  <h2>Posts</h2>
-  <% if user_has_no_posts? %>
-   <p>OMG there's nothing here! Get on it, <%= @user.name %>!</p>
-  <% else %>
-    <%= render @user.posts %>
- <% end %>
+  <%= user_has_posts(@user) %>
  
  <h2>Comments</h2>
-  <% if user_has_no_comments? %>
-   <p>Do you even know how to comment???</p>
-   <%= render @user.comments %>
-  <% end %>
+  <%= user_has_comments(@user) %>
+   
   
  <h2>Favorite Posts</h2>
     <% current_user.favorites.each do |favorite| %>
