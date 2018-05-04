@@ -12,9 +12,9 @@
   <body>
     <div class="container"></div>
       <ul class="nav nav-tabs">
-        <li><%= link_to "Bloccit", root_path %></li>
-        <li><%= link_to "Topics", topics_path %></li>
-        <li><%= link_to "About", about_path %></li>
+        <li><%= link_to "Bloccit", root_path, onclick: "blocmetrics.report('bloccit link clicked')"  %></li>
+        <li><%= link_to "Topics", topics_path, onclick: "blocmetrics.report('topics link clicked')" %></li>
+        <li><%= link_to "About", about_path, onclick: "blocmetrics.report('about link clicked')" %></li>
         <div class="pull-right user-info"> 
           <% if current_user %>
             <li class="pull-right"><%= link_to "Sign Out", session_path(current_user), method: :delete %></li>
