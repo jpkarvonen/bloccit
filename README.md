@@ -1,4 +1,6 @@
-# Bloccit: A Ruby on Rails application like Reddit where users share posts in topic threads that they can comment on, vote up or down, and favorite
+# Bloccit:
+
+## A Ruby on Rails application like Reddit where users share posts in topic threads that they can comment on, vote up or down, and favorite
 
 ### Features Include:
 
